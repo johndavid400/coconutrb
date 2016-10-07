@@ -54,7 +54,7 @@ module Coconut
     end
 
     if webhook = options[:webhook]
-      conf << "set webhook = #{webhook}"
+      conf << "set webhook = #{webhook}, events=true"
     end
 
     if outputs = options[:outputs]
